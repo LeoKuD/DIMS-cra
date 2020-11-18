@@ -1,6 +1,6 @@
-import logo from 'icons/logo.svg';
+import logo from '../icons/logo.svg';
 import classes from './App.module.css';
-import { SaveButton } from 'components/Buttons/SaveButton/SaveButton';
+import { SaveButton } from '../components/Buttons/SaveButton/SaveButton';
 
 export const App = () => {
   return (
