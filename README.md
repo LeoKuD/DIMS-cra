@@ -1,4 +1,4 @@
-<div style="margin: 2rem auto; width: 60%"><img src="https://srv-store3.gofile.io/download/ECc3Qn/logo_final.svg" alt="dims-logo" /></div>
+<div style="margin: 2rem auto; width: 60%"><img src="https://live.staticflickr.com/65535/50695950941_526e15d2f1.jpg" /></div>
 
 [![codecov](https://codecov.io/gh/Dev-incubator/DIMS-cra/branch/main/graph/badge.svg?token=OGFOYAC3VK)](https://codecov.io/gh/Dev-incubator/DIMS-cra)
 
@@ -28,7 +28,7 @@
 
 ### Publish with netlify button 🚀
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Dev-incubator/DIMS-cra#CUSTOM_LOGO=https://srv-store3.gofile.io/download/ECc3Qn/logo_final.svg&DIMS_TITLE="Dims%20app")
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Dev-incubator/DIMS-cra#CUSTOM_LOGO=https://live.staticflickr.com/65535/50695950941_526e15d2f1.jpg&DIMS_TITLE="Dims%20app")
 
 After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete.
 
