@@ -1,40 +1,40 @@
 [![codecov](https://codecov.io/gh/Dev-incubator/DIMS-cra/branch/main/graph/badge.svg?token=OGFOYAC3VK)](https://codecov.io/gh/Dev-incubator/DIMS-cra)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### The link to principal idea of design [mockup](https://symu.co/freebies/templates-4/merkury-dashboard-psd-template/). **You do not have to follow it, just use it as a guide**
 
-## Available Scripts
+### In **[wiki-ui](https://github.com/Dev-incubator/Wiki-UI)** you can find all other guides regarding project structure, plan etc.
 
-In the project directory, you can run:
+### Read about good commits, git workflow requirements etc. in repo [guide](https://github.com/Dev-incubator/git)
 
-### `yarn start`
+### Main scripts
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```js
+    "start" - start app
+    "build" - build app
+    "test" - run tests
+    "test:coverage:ci:codecov" - run test and submit codecoverage to codecov
+    "format" - format code with prettier
+    "lint" - check your code with eslint
+    "lint:fix" - fix your code with eslint
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Main technologies ℹ️
 
-### `yarn test`
+- react
+- prettier + eslint
+- codecov with Travis CI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Publish with netlify button 🚀
 
-### `yarn build`
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Dev-incubator/DIMS-cra#CUSTOM_LOGO=https://gofile.io/d/ECc3Qn#DIMS_TITLE="Dims%20app")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Env variables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+CUSTOM_LOGO - here you can pass a link to your app logo
+DIMS_TITLE = here you can pass your app title
 
-### `yarn eject`
+### Some important points ⚠️️
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Yarn-package manager only

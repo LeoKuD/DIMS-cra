@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[template.environment]
+  DIMS_TITLE = "set your cutom DIMS title"
+  CUSTOM_LOGO = "set the url to your custom DIMS's logo here"
+

@@ -3,6 +3,10 @@ import classes from './App.module.css';
 import { SaveButton } from '../components/Buttons/SaveButton/SaveButton';
 
 export const App = () => {
+  useEffect(() => {
+    document.title = appTitle;
+  }, []);
+
   return (
     <div className={classes.App}>
       <header className={classes.Header}>

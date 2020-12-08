@@ -15,7 +15,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject",
     "test": "react-scripts test",
     "test:ci": "jest --ci",
     "test:coverage": "jest --coverage",
@@ -23,7 +22,8 @@
     "test:coverage:ci:codecov": "npm test -- --coverage && codecov",
     "format": "prettier --write \"src/**/*.+(js|jsx|json|css|scss|md)\"",
     "lint": "eslint ./src",
-    "lint:fix": "eslint --fix ./src"
+    "lint:fix": "eslint --fix ./src",
+    "clean": "rm -rf node_modules coverage build"
   },
   "eslintConfig": {
     "extends": [
