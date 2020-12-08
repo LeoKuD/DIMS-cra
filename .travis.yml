@@ -16,7 +16,7 @@ notifications:
     on_success: change
     on_failure: always
 before_install:
-  - yarn add -g codecov
+  - yarn global add codecov
 install:
   - yarn --frozen-lockfile
 script:
