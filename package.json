@@ -1,6 +1,6 @@
 {
   "name": "dims-cra",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DIMS template bootstrapped with CRA app",
   "main": "src/index.jsx",
   "keywords": ["template", "cra", "create-react-app"],
