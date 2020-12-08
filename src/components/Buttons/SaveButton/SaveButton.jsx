@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import { Button } from '../Button';
 
-export const SaveButton = ({ children }) => {
-  return <Button>{children}</Button>;
-};
+export const SaveButton = ({ children }) => <Button>{children}</Button>;
 
-SaveButton.propTypes = {};
+SaveButton.propTypes = {
+  children: PropTypes.node,
+};
 SaveButton.defaultProps = {
   children: 'Save',
 };
