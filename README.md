@@ -1,3 +1,5 @@
+<div style="margin: 2rem auto; width: 60%"><img src="https://srv-store3.gofile.io/download/ECc3Qn/logo_final.svg" alt="dims-logo" /></div>
+
 [![codecov](https://codecov.io/gh/Dev-incubator/DIMS-cra/branch/main/graph/badge.svg?token=OGFOYAC3VK)](https://codecov.io/gh/Dev-incubator/DIMS-cra)
 
 ### The link to principal idea of design [mockup](https://symu.co/freebies/templates-4/merkury-dashboard-psd-template/). <br/> **You do not have to follow it, just use it as a guide**
@@ -26,7 +28,7 @@
 
 ### Publish with netlify button 🚀
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Dev-incubator/DIMS-cra#CUSTOM_LOGO=https://gofile.io/d/ECc3Qn&DIMS_TITLE="Dims%20app")
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Dev-incubator/DIMS-cra#CUSTOM_LOGO=https://srv-store3.gofile.io/download/ECc3Qn/logo_final.svg&DIMS_TITLE="Dims%20app")
 
 After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete.
 
