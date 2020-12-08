@@ -16,11 +16,11 @@ notifications:
     on_success: change
     on_failure: always
 before_install:
-  - npm install -g codecov
+  - yarn add -g codecov
 install:
-  - npm ci
+  - yarn --frozen-lockfile
 script:
-  - npm test
-  - npm run test:coverage:ci:codecov
+  - yarn run test
+  - yarn run test:coverage:ci:codecov
 after_success:
   - bash <(curl -s https://codecov.io/bash)
