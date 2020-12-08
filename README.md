@@ -6,16 +6,16 @@
 
 ### Read about good commits, git workflow requirements etc. in repo [guide](https://github.com/Dev-incubator/git)
 
-### Main scripts
+### Main scripts 📄
 
 ```js
-    "start" - start app
-    "build" - build app
-    "test" - run tests
-    "test:coverage:ci:codecov" - run test and submit codecoverage to codecov
-    "format" - format code with prettier
-    "lint" - check your code with eslint
-    "lint:fix" - fix your code with eslint
+  "start" - start app
+  "build" - build app
+  "test" - run tests
+  "test:coverage:ci:codecov" - run test and submit codecoverage to codecov
+  "format" - format code with prettier
+  "lint" - check your code with eslint
+  "lint:fix" - fix your code with eslint
 ```
 
 ### Main technologies ℹ️
@@ -30,10 +30,10 @@
 
 After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete.
 
-### Env variables
+### Env variables 📝
 
-CUSTOM_LOGO - here you can pass a link to your app logo
-DIMS_TITLE = here you can pass your app title
+ - **CUSTOM_LOGO** - here you can pass a link to your app logo
+ - **DIMS_TITLE** - here you can pass your app title
 
 ### Some important points ⚠️️
 
