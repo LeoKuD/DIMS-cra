@@ -37,10 +37,12 @@ After clicking that button, you’ll authenticate with GitHub and choose a repos
 
 ### Some important points ⚠️️
 
-#### Yarn-package manager only
+#### :small_red_triangle: Yarn-package manager only :small_red_triangle:
 
 #### VSCode integration
 For ESLint warnings inline with your code and run formatting automatically with Prettier in VSCode, we need to install:
  - **[ESLint](https://github.com/Microsoft/vscode-eslint)** extension
  - **[Prettier](https://github.com/prettier/prettier-vscode)** extension
  - Edit VSCode settings.json to set up formatting on every file change or on save
+
+#### Basic webstorm setup is in .idea 
