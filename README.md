@@ -1,4 +1,6 @@
-<div align="center"><img src="https://live.staticflickr.com/65535/50695950941_526e15d2f1.jpg" width="60%" alt="dims-logo"/></div>
+<div align="center"><img src="https://live.staticflickr.com/65535/50695950941_526e15d2f1.jpg" width="40%" alt="dims-logo"/></div>
+
+<hr/>
 
 [![codecov](https://codecov.io/gh/Dev-incubator/DIMS-cra/branch/main/graph/badge.svg?token=OGFOYAC3VK)](https://codecov.io/gh/Dev-incubator/DIMS-cra)
 
