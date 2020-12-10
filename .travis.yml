@@ -2,6 +2,8 @@ language:
   - node.js
 node_js:
   - stable
+  - lts/*
+# rebuild the node_modules directory only if the yarn.lock changes
 cache:
   directories:
     - node_modules
@@ -19,8 +21,16 @@ before_install:
   - yarn global add codecov
 install:
   - yarn --frozen-lockfile
-script:
-  - yarn run test
-  - yarn run test:coverage:ci:codecov
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
+
+jobs:
+  include:
+    # Define the release stage that runs semantic-release
+    - stage: release
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - yarn run test:coverage:ci:codecov
+          - npx semantic-release
+        after_success:
+          - bash <(curl -s https://codecov.io/bash)

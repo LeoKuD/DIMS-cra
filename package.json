@@ -1,6 +1,7 @@
+
 {
   "name": "dims-cra",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "DIMS template bootstrapped with CRA app",
   "main": "src/index.jsx",
   "keywords": [
@@ -13,15 +14,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:watch": "yarn test --watchAll",
-    "test:ci": "jest --ci",
-    "test:coverage": "jest --coverage",
-    "test:coverage:ci": "jest --ci --coverage",
-    "test:coverage:ci:codecov": "npm test -- --coverage && codecov",
+    "test:ci": "set CI=true && yarn run test",
+    "test:coverage": "yarn test -- --coverage",
+    "test:coverage:ci": "set CI=true && yarn run test:coverage",
+    "test:coverage:ci:codecov": "yarn test:coverage:ci && codecov",
     "format": "prettier --write \"src/**/*.+(js|jsx|json|css|scss|md)\"",
-    "lint": "eslint ./src/**",
-    "lint:fix": "eslint --fix ./src/**",
+    "lint": "eslint src/**",
+    "lint:fix": "eslint --fix src/**",
     "clean": "rm -rf node_modules coverage build",
-    "commit": "cz"
+    "commit": "cz",
+    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": [
@@ -70,7 +72,15 @@
     ],
     "testMatch": [
       "**/src/**/*.test.+(js|jsx)"
-    ]
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
+      }
+    }
   },
   "dependencies": {
     "@testing-library/jest-dom": "5.11.4",
@@ -99,6 +109,7 @@
     "husky": "4.3.0",
     "lint-staged": "10.5.1",
     "prettier": "2.2.1",
+    "semantic-release": "17.3.0",
     "typescript": "4.1.2"
   },
   "repository": {
