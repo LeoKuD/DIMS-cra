@@ -1,6 +1,6 @@
 {
   "hooks": {
-    "prepare-commit-msg": "exec < /dev/tty && npm run git-cz -- --hook || true",
+    "prepare-commit-msg": "exec < /dev/tty && yarn run commit -- --hook || true",
     "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
     "pre-commit": "npx lint-staged"
   }
