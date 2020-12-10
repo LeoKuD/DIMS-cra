@@ -4,7 +4,7 @@
 
 [![codecov](https://codecov.io/gh/Dev-incubator/DIMS-cra/branch/main/graph/badge.svg?token=OGFOYAC3VK)](https://codecov.io/gh/Dev-incubator/DIMS-cra)
 [![Build Status](https://travis-ci.com/Dev-incubator/DIMS-cra.svg?branch=main)](https://travis-ci.com/Dev-incubator/DIMS-cra)
-[![GitHub stars](https://img.shields.io/github/stars/Dev-incubator/DIMS-cra)](https://github.com/Dev-incubator/DIMS-cra/stargazers)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Dev-incubator/DIMS-cra)
 ![GitHub issues](https://img.shields.io/github/issues/Dev-incubator/DIMS-cra)
 
@@ -31,7 +31,7 @@
 - react
 - eslint + air bnb style guide + some additional rules
 - prettier
-- codecov with Travis CI
+- codecov with Travis CIh
 - commitizen
 
 ### Publish with netlify button 🚀
