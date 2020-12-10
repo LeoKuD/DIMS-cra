@@ -16,7 +16,7 @@
 
 ### Main scripts 📄
 
-```js
+```bash
   "start" - start app
   "build" - build app
   "test" - run tests
@@ -29,10 +29,14 @@
 ### Main technologies ℹ️
 
 - react
-- prettier + eslint
+- eslint + air bnb style guide + some additional rules
+- prettier
 - codecov with Travis CI
+- commitizen
 
 ### Publish with netlify button 🚀
+
+You need to have an account on [netlify](https://www.netlify.com/)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Dev-incubator/DIMS-cra#CUSTOM_LOGO=https://live.staticflickr.com/65535/50695950941_526e15d2f1.jpg&DIMS_TITLE="Dims%20app")
 

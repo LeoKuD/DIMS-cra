@@ -3,7 +3,11 @@
   "version": "1.0.1",
   "description": "DIMS template bootstrapped with CRA app",
   "main": "src/index.jsx",
-  "keywords": ["template", "cra", "create-react-app"],
+  "keywords": [
+    "template",
+    "cra",
+    "create-react-app"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -16,7 +20,8 @@
     "format": "prettier --write \"src/**/*.+(js|jsx|json|css|scss|md)\"",
     "lint": "eslint ./src/**",
     "lint:fix": "eslint --fix ./src/**",
-    "clean": "rm -rf node_modules coverage build"
+    "clean": "rm -rf node_modules coverage build",
+    "commit": "cz"
   },
   "eslintConfig": {
     "extends": [
@@ -81,6 +86,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "4.9.1",
     "@typescript-eslint/parser": "4.9.1",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "7.15.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "7.0.0",
@@ -103,9 +109,17 @@
   "bugs": {
     "url": "https://github.com/Dev-incubator/DIMS-cra/issues"
   },
+  "release": {
+    "branches": "main"
+  },
   "author": {
     "name": "Maxim Shchutsky",
     "email": "maximuzz@yandex.ru"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
