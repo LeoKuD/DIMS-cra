@@ -31,7 +31,7 @@
 - react
 - eslint + air bnb style guide + some additional rules
 - prettier
-- codecov with Travis CIh
+- codecov with Travis CI
 - commitizen
 
 ### Publish with netlify button 🚀
