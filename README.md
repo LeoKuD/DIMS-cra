@@ -24,7 +24,15 @@
   "format" - format code with prettier
   "lint" - check your code with eslint
   "lint:fix" - fix your code with eslint
+  "cm" - run commitizen to create a good commit
 ```
+
+To commit message you have to write following commands
+```bash
+   git add .
+   git commit 
+```
+then follow commitizen prompts and write a good commit
 
 ### Main technologies ℹ️
 

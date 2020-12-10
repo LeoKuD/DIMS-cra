@@ -21,7 +21,7 @@
     "lint": "eslint src/**",
     "lint:fix": "eslint --fix src/**",
     "clean": "rm -rf node_modules coverage build",
-    "commit": "cz"
+    "cm": "cz"
   },
   "eslintConfig": {
     "extends": [
