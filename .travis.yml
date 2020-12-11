@@ -9,10 +9,12 @@ cache:
   yarn: true
   directories:
     - node_modules
+
 branches:
   - main
   - master
   - dev
+
 notifications:
   email:
     recipients:
@@ -24,19 +26,20 @@ jobs:
   include:
     - stage: install dependeincies
       install: yarn --frozen-lockfile
-      cleanup: false
+      skip_cleanup: true
     - stage: test
       script: yarn test:coverage:ci:codecov
-      cleanup: false
+      skip_cleanup: true
     - stage: release
       before_deploy:
         - yarn add global netlify-cli
         - yarn build
       deploy:
         provider: script
-        cleanup: false
+        edge: true
+        skip_cleanup: true
         script:
-          - netlify deploy -s $NETLIFY_SITE_ID -a $NETLIFY_AUTH_TOKEN -p -d ./build
+          - netlify deploy --prod --dir=build
           - npx semantic-release
         on:
           branch:
