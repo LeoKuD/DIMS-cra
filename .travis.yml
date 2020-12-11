@@ -24,17 +24,17 @@ jobs:
   include:
     - stage: install dependeincies
       install: yarn --frozen-lockfile
-      cleanup: true
+      cleanup: false
     - stage: test
       script: yarn test:coverage:ci:codecov
-      cleanup: true
+      cleanup: false
     - stage: release
       before_deploy:
         - yarn add global netlify-cli
         - yarn build
       deploy:
         provider: script
-        cleanup: true
+        cleanup: false
         script:
           - netlify deploy -s $NETLIFY_SITE_ID -a $NETLIFY_AUTH_TOKEN -p -d ./build
           - npx semantic-release
