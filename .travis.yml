@@ -1,7 +1,9 @@
-language: node.js
+language: node_js
 node_js:
   - stable
   - lts/*
+os:
+  - linux
 # rebuild the node_modules directory only if the yarn.lock changes
 cache:
   directories:
@@ -22,16 +24,17 @@ jobs:
     - stage: install dependeincies
       before_install: yarn global add codecov
       install: yarn --frozen-lockfile
-      skip_cleanup: true
+      cleanup: true
     - stage: test
       script: yarn test:coverage:ci:codecov
+      cleanup: true
     - stage: release
       before_deploy:
         - yarn add global netlify-cli
         - yarn build
       deploy:
         provider: script
-        skip_cleanup: true
+        cleanup: true
         script:
           - npx semantic-release
           - netlify deploy -s $NETLIFY_SITE_ID -a $NETLIFY_AUTH_TOKEN -p -d ./build
