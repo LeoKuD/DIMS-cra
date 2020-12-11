@@ -6,6 +6,7 @@ os:
   - linux
 # rebuild the node_modules directory only if the yarn.lock changes
 cache:
+  yarn: true
   directories:
     - node_modules
 branches:
@@ -22,7 +23,6 @@ notifications:
 jobs:
   include:
     - stage: install dependeincies
-      before_install: yarn global add codecov
       install: yarn --frozen-lockfile
       cleanup: true
     - stage: test
