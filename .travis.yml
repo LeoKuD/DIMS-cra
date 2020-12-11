@@ -1,5 +1,4 @@
-language:
-  - node.js
+language: node.js
 node_js:
   - stable
   - lts/*
@@ -9,28 +8,34 @@ cache:
     - node_modules
 branches:
   - main
-  - dev
   - master
+  - dev
 notifications:
   email:
     recipients:
       - hincubator@gmail.com
     on_success: change
     on_failure: always
-before_install:
-  - yarn global add codecov
-install:
-  - yarn --frozen-lockfile
 
 jobs:
   include:
-    # Define the release stage that runs semantic-release
+    - stage: install dependeincies
+      before_install: yarn global add codecov
+      install: yarn --frozen-lockfile
+      skip_cleanup: true
+    - stage: test
+      script: yarn test:coverage:ci:codecov
     - stage: release
+      before_deploy:
+        - yarn add global netlify-cli
+        - yarn build
       deploy:
         provider: script
         skip_cleanup: true
         script:
-          - yarn run test:coverage:ci:codecov
           - npx semantic-release
-        after_success:
-          - bash <(curl -s https://codecov.io/bash)
+          - netlify deploy -s $NETLIFY_SITE_ID -a $NETLIFY_AUTH_TOKEN -p -d ./build
+        if: branch = master
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

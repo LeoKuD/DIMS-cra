@@ -11,15 +11,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "test:watch": "yarn test --watchAll",
     "test:ci": "set CI=true && yarn run test",
-    "test:coverage": "yarn test -- --coverage",
-    "test:coverage:ci": "set CI=true && yarn run test:coverage",
-    "test:coverage:ci:codecov": "yarn test:coverage && codecov",
+    "test:coverage": "yarn test --coverage",
+    "test:coverage:ci": "set CI=true && yarn test:coverage",
+    "test:coverage:ci:codecov": "yarn test:coverage:ci && codecov",
     "format": "prettier --write \"src/**/*.+(js|jsx|json|css|scss|md)\"",
     "lint": "eslint src/**",
     "lint:fix": "eslint --fix src/**",
+    "clean:coverage": "rm -rf coverage",
     "clean": "rm -rf node_modules coverage build",
     "cm": "cz"
   },
@@ -66,17 +67,20 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/src/index.jsx",
+      "!<rootDir>/src/reportWebVitals.js",
+      "!<rootDir>/src/shared/**/*.{js,jsx}"
     ],
     "testMatch": [
       "**/src/**/*.test.+(js|jsx)"
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 50,
         "functions": 50,
         "lines": 50,
-        "statements": 50
+        "statements": 50,
+        "branches": 50
       }
     }
   },
