@@ -16,7 +16,7 @@
     "test:ci": "set CI=true && yarn run test",
     "test:coverage": "yarn test -- --coverage",
     "test:coverage:ci": "set CI=true && yarn run test:coverage",
-    "test:coverage:ci:codecov": "yarn test:coverage:ci && codecov",
+    "test:coverage:ci:codecov": "yarn test:coverage && codecov",
     "format": "prettier --write \"src/**/*.+(js|jsx|json|css|scss|md)\"",
     "lint": "eslint src/**",
     "lint:fix": "eslint --fix src/**",
