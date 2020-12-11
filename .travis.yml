@@ -39,7 +39,9 @@ jobs:
           - netlify deploy -s $NETLIFY_SITE_ID -a $NETLIFY_AUTH_TOKEN -p -d ./build
           - npx semantic-release
         on:
-          branch: master
+          branch:
+            - master
+            - main
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
