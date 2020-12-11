@@ -20,8 +20,8 @@
     "format": "prettier --write \"src/**/*.+(js|jsx|json|css|scss|md)\"",
     "lint": "eslint src/**",
     "lint:fix": "eslint --fix src/**",
-    "clean:coverage": "rm -rf coverage",
     "clean": "rm -rf node_modules coverage build",
+    "clean:coverage": "rm -rf coverage",
     "cm": "cz"
   },
   "eslintConfig": {
@@ -37,7 +37,7 @@
       "prettier"
     ],
     "rules": {
-      "prettier/prettier": "warn",
+      "prettier/prettier": ["warn", { "endOfLine": "auto" }],
       "react/state-in-constructor": 0,
       "react/jsx-props-no-spreading": "off",
       "import/prefer-default-export": "off",
@@ -122,7 +122,6 @@
     "type": "git",
     "url": "git+https://github.com/Dev-incubator/DIMS-cra.git"
   },
-  "homepage": "https://github.com/Dev-incubator/DIMS-cra#readme",
   "bugs": {
     "url": "https://github.com/Dev-incubator/DIMS-cra/issues"
   },
