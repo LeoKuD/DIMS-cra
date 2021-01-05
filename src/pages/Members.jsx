@@ -1,8 +1,4 @@
-import React from 'react';
-
-export const Members = () => {
-  return <div>Members Grid</div>;
-};
+export const Members = () => <div>Members Grid</div>;
 
 Members.propTypes = {};
 Members.defaultProps = {};
