@@ -49,7 +49,9 @@ You need to have an account on [netlify](https://www.netlify.com/)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Dev-incubator/DIMS-cra#CUSTOM_LOGO=https://live.staticflickr.com/65535/50695950941_526e15d2f1.jpg&DIMS_TITLE="Dims%20app")
 
-After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete.
+If you click this button, it’ll authenticate you in Netlify and you'll have to choose a repository name. <br/>
+Netlify will automatically create a new repo for you that looks exactly like this one. <br/>
+Next, it will build and deploy the new site on Netlify bringing you to the site dashboard when the build is completed.
 
 ### Env variables 📝
 
@@ -64,6 +66,6 @@ After clicking that button, you’ll authenticate with GitHub and choose a repos
 For ESLint warnings inline with your code and run formatting automatically with Prettier in VSCode, we need to install:
  - **[ESLint](https://github.com/Microsoft/vscode-eslint)** extension
  - **[Prettier](https://github.com/prettier/prettier-vscode)** extension
- - Edit VSCode settings.json to set up formatting on every file change or on save
+ - Edit **VSCode** settings.json to set up formatting on every file change or on every save
 
 #### Basic webstorm setup is in .idea 

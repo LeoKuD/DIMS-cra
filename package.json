@@ -37,7 +37,12 @@
       "prettier"
     ],
     "rules": {
-      "prettier/prettier": ["warn", { "endOfLine": "auto" }],
+      "prettier/prettier": [
+        "warn",
+        {
+          "endOfLine": "auto"
+        }
+      ],
       "react/state-in-constructor": 0,
       "react/jsx-props-no-spreading": "off",
       "import/prefer-default-export": "off",
@@ -96,9 +101,6 @@
     "web-vitals": "0.2.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "11.0.0",
-    "@commitlint/config-conventional": "11.0.0",
-    "@commitlint/prompt": "11.0.0",
     "@typescript-eslint/eslint-plugin": "4.9.1",
     "@typescript-eslint/parser": "4.9.1",
     "codecov": "3.8.1",
@@ -133,11 +135,6 @@
     "email": "maximuzz@yandex.ru"
   },
   "license": "MIT",
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
