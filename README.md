@@ -9,6 +9,11 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Dev-incubator/DIMS-cra)
 ![GitHub issues](https://img.shields.io/github/issues/Dev-incubator/DIMS-cra)
 
+## Important notes ⚠️️
+
+### :small_red_triangle: we only use yarn-package manager in the project :small_red_triangle:
+
+
 ### The link to principal idea of design [mockup](https://symu.co/freebies/templates-4/merkury-dashboard-psd-template/). <br/> **You do not have to follow it, just use it as a guide**
 
 ### In **[wiki-ui](https://github.com/Dev-incubator/Wiki-UI)** you can find all other guides regarding project structure, plan etc.
@@ -57,10 +62,6 @@ Next, it will build and deploy the new site on Netlify bringing you to the site 
 
  - **CUSTOM_LOGO** - here you can pass a link to your app logo
  - **DIMS_TITLE** - here you can pass your app title
-
-### Some important points ⚠️️
-
-#### :small_red_triangle: Yarn-package manager only :small_red_triangle:
 
 #### VSCode integration
 For ESLint warnings inline with your code and run formatting automatically with Prettier in VSCode, we need to install:
