@@ -40,9 +40,9 @@ jobs:
         skip_cleanup: true
         script:
           - netlify deploy --prod --dir=build
-          - npx semantic-release
         on:
           branch: main
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)
+        - yarn semantic-release
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash)

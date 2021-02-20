@@ -1,6 +1,6 @@
 {
   "name": "dims-cra",
-  "version": "1.0.2",
+  "version": "0.0.0-development",
   "description": "DIMS template bootstrapped with CRA app",
   "main": "src/index.jsx",
   "keywords": [
@@ -18,19 +18,19 @@
     "test:coverage:ci": "set CI=true && yarn test:coverage",
     "test:coverage:ci:codecov": "yarn test:coverage:ci && codecov",
     "format": "prettier --write \"src/**/*.+(js|jsx|json|css|scss|md)\"",
-    "lint": "eslint src/**",
-    "lint:fix": "eslint --fix src/**",
+    "lint": "eslint \"src/**/*.+(js|jsx)\"",
+    "lint:fix": "eslint --fix \"src/**/*.+(js|jsx)\"",
     "clean": "rm -rf node_modules coverage build",
     "clean:coverage": "rm -rf coverage",
-    "cm": "cz"
+    "cm": "cz",
+    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": [
+      "react-app",
       "airbnb",
       "prettier",
-      "prettier/react",
-      "react-app",
-      "react-app/jest"
+      "prettier/react"
     ],
     "plugins": [
       "react",
@@ -97,7 +97,9 @@
     "prop-types": "15.7.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-scripts": "4.0.1",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.2",
+    "semantic-release-cli": "5.4.3",
     "web-vitals": "0.2.4"
   },
   "devDependencies": {
@@ -109,20 +111,16 @@
     "eslint": "7.15.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "7.0.0",
-    "eslint-config-react-app": "6.0.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-prettier": "3.2.0",
-    "eslint-plugin-react": "7.21.5",
-    "eslint-plugin-react-hooks": "4.2.0",
     "husky": "4.3.6",
     "lint-staged": "10.5.1",
     "prettier": "2.2.1",
+    "semantic-release": "^17.3.9",
     "typescript": "4.1.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dev-incubator/DIMS-cra.git"
+    "url": "https://github.com/Dev-incubator/DIMS-cra.git"
   },
   "bugs": {
     "url": "https://github.com/Dev-incubator/DIMS-cra/issues"
