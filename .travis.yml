@@ -25,7 +25,7 @@ notifications:
 jobs:
   include:
     - stage: install dependeincies
-      install: npm ci
+      install: npm i
       skip_cleanup: true
     - stage: test
       script: npm run test:coverage:ci:codecov
