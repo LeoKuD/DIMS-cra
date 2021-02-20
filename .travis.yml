@@ -6,7 +6,7 @@ os:
   - linux
 # rebuild the node_modules directory only if the .lock file changes
 cache:
-  npm: true
+  npm: false
   directories:
     - node_modules
 
