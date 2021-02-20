@@ -7,6 +7,7 @@
 [![Build Status](https://travis-ci.com/Dev-incubator/DIMS-cra.svg?branch=main)](https://travis-ci.com/Dev-incubator/DIMS-cra)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Dev-incubator/DIMS-cra)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 ![GitHub issues](https://img.shields.io/github/issues/Dev-incubator/DIMS-cra)
 
 ## Important notes ⚠️️
