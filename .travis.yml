@@ -5,10 +5,10 @@ node_js:
 os:
   - linux
 # rebuild the node_modules directory only if the .lock file changes
-cache:
-  npm: false
-  directories:
-    - node_modules
+#cache:
+#  npm: false
+#  directories:
+#    - node_modules
 
 branches:
   - main
