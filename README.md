@@ -12,9 +12,6 @@
 
 ## Important notes ⚠️️
 
-### :small_red_triangle: we only use yarn-package manager in the project :small_red_triangle:
-
-
 ### The link to principal idea of design [mockup](https://symu.co/freebies/templates-4/merkury-dashboard-psd-template/). <br/> **You do not have to follow it, just use it as a guide**
 
 ### In **[wiki-ui](https://github.com/Dev-incubator/Wiki-UI)** you can find all other guides regarding project structure, plan etc.
