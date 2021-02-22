@@ -17,23 +17,23 @@
     "test:coverage": "yarn test --coverage",
     "test:coverage:ci": "set CI=true && yarn test:coverage",
     "test:coverage:ci:codecov": "yarn test:coverage:ci && codecov",
-    "format": "prettier --write \"src/**/*.+(js|jsx|json|css|scss|md)\"",
     "lint": "eslint \"src/**/*.+(js|jsx)\"",
     "lint:fix": "eslint --fix \"src/**/*.+(js|jsx)\"",
     "clean": "rm -rf node_modules coverage build",
     "clean:coverage": "rm -rf coverage",
     "cm": "cz",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "precommit": "lint-staged"
   },
   "eslintConfig": {
+    "plugins": [
+      "react",
+      "prettier"
+    ],
     "extends": [
       "react-app",
       "airbnb",
-      "prettier",
-      "prettier/react"
-    ],
-    "plugins": [
-      "react",
+      "plugin:prettier/recommended",
       "prettier"
     ],
     "rules": {
@@ -51,7 +51,8 @@
       "no-console": "off",
       "no-use-before-define": 0,
       "no-param-reassign": 1,
-      "curly": "warn"
+      "curly": "error",
+      "newline-before-return": "warn"
     }
   },
   "eslintIgnore": [
@@ -93,6 +94,7 @@
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.5",
     "@testing-library/user-event": "12.7.1",
+    "eslint": "7.20.0",
     "node-sass": "5.0.0",
     "prop-types": "15.7.2",
     "react": "17.0.1",
@@ -102,20 +104,16 @@
     "web-vitals": "1.1.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.15.1",
-    "@typescript-eslint/parser": "4.9.1",
     "codecov": "3.8.1",
     "commitizen": "4.2.3",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "7.20.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.0.0",
     "eslint-plugin-prettier": "3.2.0",
     "husky": "4.3.6",
     "lint-staged": "10.5.4",
     "prettier": "2.2.1",
-    "semantic-release": "^17.3.9",
-    "typescript": "4.1.5"
+    "semantic-release": "^17.3.9"
   },
   "repository": {
     "type": "git",
