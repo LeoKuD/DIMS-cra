@@ -21,7 +21,6 @@
   "build" - build app
   "test" - run tests
   "test:coverage:ci:codecov" - run test and submit codecoverage to codecov
-  "format" - format code with prettier
   "lint" - check your code with eslint
   "lint:fix" - fix your code with eslint
   "cm" - run commitizen to create a good commit
@@ -38,7 +37,8 @@ then follow commitizen prompts and write a good commit
 
 - react
 - eslint + air bnb style guide + some additional rules
-- prettier
+- husky and lint-staged
+- prettier and eslint
 - codecov with Travis CI
 - commitizen
 
