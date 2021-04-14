@@ -22,7 +22,7 @@
     "clean": "rm -rf node_modules coverage build",
     "clean:coverage": "rm -rf coverage",
     "cm": "cz",
-    "precommit": "lint-staged",
+    "pre-commit": "lint-staged",
     "prepare": "husky install"
   },
   "eslintConfig": {
