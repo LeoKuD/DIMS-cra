@@ -1,6 +1,6 @@
 {
   "name": "dims-cra",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "DIMS template bootstrapped with CRA app",
   "main": "src/index.jsx",
   "keywords": [
