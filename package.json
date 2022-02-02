@@ -22,7 +22,8 @@
     "clean": "rm -rf node_modules coverage build",
     "clean:coverage": "rm -rf coverage",
     "cm": "cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preversion": "yarn ci && yarn lint && yarn test"
   },
   "eslintConfig": {
     "plugins": [
