@@ -23,7 +23,8 @@
     "clean:coverage": "rm -rf coverage",
     "cm": "cz",
     "prepare": "husky install",
-    "preversion": "yarn install --frozen-lockfile && yarn lint && yarn test:ci"
+    "preversion": "yarn install --frozen-lockfile && yarn lint && yarn test:ci",
+    "postpublish": "git push && git push --tags"
   },
   "eslintConfig": {
     "plugins": [
